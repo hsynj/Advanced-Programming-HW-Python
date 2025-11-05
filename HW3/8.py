@@ -1,0 +1,72 @@
+import turtle
+
+pen = turtle.Turtle()
+turtle.bgcolor("black")
+pen.color("black", "gray")
+pen.speed(100)
+
+
+def goto(x, y):
+    pen.penup()
+    pen.goto(x, y)
+    pen.pendown()
+
+
+def dr_win(t, x, y):
+    goto(x, y)
+    pen.color("white", "white")
+    pen.begin_fill()
+    for i in range(4):
+        pen.left(90)
+        pen.forward(t)
+    pen.end_fill()
+
+
+goto(-430, -100)
+pen.begin_fill()
+pen.forward(120)
+pen.left(90)
+pen.forward(100)
+pen.right(90)
+pen.forward(100)
+pen.left(90)
+pen.forward(250)
+pen.right(90)
+pen.forward(200)
+pen.right(90)
+pen.forward(300)
+pen.left(90)
+pen.forward(120)
+pen.left(90)
+pen.forward(200)
+pen.right(90)
+pen.forward(130)
+pen.right(90)
+pen.forward(100)
+pen.left(90)
+pen.forward(40)
+pen.right(90)
+pen.forward(150)
+pen.left(90)
+pen.forward(150)
+pen.right(90)
+pen.forward(300)
+pen.right(90)
+pen.forward(900)
+pen.end_fill()
+
+dr_win(18, -200, 220)
+dr_win(18, -200, 190)
+dr_win(18, -290, -30)
+dr_win(18, -90, -100)
+dr_win(18, -40, 140)
+dr_win(18, 120, 90)
+dr_win(3, -400, 80)
+dr_win(3, -250, 40)
+dr_win(3, -325, 250)
+dr_win(3, -100, 330)
+dr_win(3, 75, 200)
+dr_win(3, 280, 100)
+dr_win(3, 400, 330)
+
+turtle.done()
